@@ -1,0 +1,32 @@
+/*               
+ *  INSTITUTO TECNOLÓGICO DE MEXICALI                                          *
+ *  TECNOLOGÍCO NACIONAL DE MÉXICO                                             *
+ *                                                                             *
+ *  PROGRAMACIÓN ORIENTADA A OBJETOS                                           *
+ *  PROFRA. MARISELA PONCE MILLANES                                            *
+ *  CICLO 2022-1, SEGUNDO SEMESTRE                                             *
+ *                                                                             *
+ *  YAHIR ALEJANDRO SAAVEDRA GALLARDO                                          *
+ *  INGENIERÍA EN SISTEMAS COMPUTACIONALES                                     *
+ *  NÚMERO DE CONTROL: 21490577                                                *
+ *                                                                             *
+ *  MIÉRCOLES 11 DE MAYO DE 2022                                               *
+ */
+
+package poo_marisela.Salario;
+
+public class EmpleadoSinHorasExtras extends Empleado {
+	private double horasTrabajadas;
+	private double sueldoPorHora;
+	
+	public EmpleadoSinHorasExtras() {
+		super();
+		this.horasTrabajadas = 0;
+		this.sueldoPorHora = 0;
+	}
+	
+	@Override
+	public double calcularSalario() {
+		return horasTrabajadas * sueldoPorHora;
+	}
+}
